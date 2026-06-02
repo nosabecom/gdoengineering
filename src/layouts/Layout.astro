@@ -8,24 +8,28 @@
 	</head>
 	<body class="bg-sky-950">
 		<nav class="bg-white flex justify-between px-9 py-4.5">
-			<a href="#" class="">logo</a>
+			<a href="/" class="">GDO Engineering</a>
 
 			<ul class="flex justify-around gap-6">
-				<li><a href="#">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 		<slot />
-		<footer>
-			
+		<footer class="h-[48px] bg-white border-t-1 flex items-center justify-center">
+			© 2026 GDO Engineering
 		</footer>
 	</body>
 </html>
 
 <style>
 	@import "tailwindcss";
+
+	@theme {
+		--shadow-top: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.1);
+	}
 	
 	html, body {
 		margin: 0;
